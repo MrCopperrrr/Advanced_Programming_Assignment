@@ -1,0 +1,29 @@
+Battle Begin.
+Team 1 is [Paladin{500,1}, Knight{469,0}, Knight{468,0}]
+Team 2 is [DeathEater{C{300.000000,200.000000}}, DeathEater{C{300.000000,200.000000}}, DeathEater{C{300.000000,200.000000}}]
+================== Battle 0 ==================
+Fighter 1: Paladin{500,1}
+Fighter 2: DeathEater{C{300.000000,200.000000}}
+Ground: 581
+Fighter 1 score: 1500.0
+Fighter 2 score: 360.5551275463989
+Duel Result: 1.0692224362268006
+==============================================
+================== Battle 1 ==================
+Fighter 1: Knight{469,0}
+Fighter 2: DeathEater{C{300.000000,200.000000}}
+Ground: 805
+Fighter 1 score: 46.0
+Fighter 2 score: 360.5551275463989
+Duel Result: 0.34222243622680054
+==============================================
+================== Battle 2 ==================
+Fighter 1: Knight{468,0}
+Fighter 2: DeathEater{C{300.000000,200.000000}}
+Ground: 805
+Fighter 1 score: 46.0
+Fighter 2 score: 360.5551275463989
+Duel Result: 0.34222243622680054
+==============================================
+Battle result. pR = 0.5845557695601339
+Battle End.

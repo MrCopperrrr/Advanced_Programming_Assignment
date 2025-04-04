@@ -1,0 +1,29 @@
+Battle Begin.
+Team 1 is [Paladin{500,1}, Knight{58,0}, Knight{130,0}]
+Team 2 is [Warrior{131,0}, Warrior{183,1}, Warrior{110,1}]
+================== Battle 0 ==================
+Fighter 1: Paladin{500,1}
+Fighter 2: Warrior{131,0}
+Ground: 748
+Fighter 1 score: 1500.0
+Fighter 2 score: 13.0
+Duel Result: 1.243
+==============================================
+================== Battle 1 ==================
+Fighter 1: Knight{58,0}
+Fighter 2: Warrior{183,1}
+Ground: 815
+Fighter 1 score: 5.0
+Fighter 2 score: 183.0
+Duel Result: 0.4105
+==============================================
+================== Battle 2 ==================
+Fighter 1: Knight{130,0}
+Fighter 2: Warrior{110,1}
+Ground: 815
+Fighter 1 score: 13.0
+Fighter 2 score: 110.0
+Duel Result: 0.451
+==============================================
+Battle result. pR = 0.7015000000000001
+Battle End.
