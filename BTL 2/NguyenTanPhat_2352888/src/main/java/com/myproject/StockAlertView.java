@@ -9,50 +9,35 @@ public class StockAlertView implements StockViewer {
     private final Map<String, Double> lastAlertedPrices = new HashMap<>(); // TODO: Stores last alerted price per stock
 
     public StockAlertView(double highThreshold, double lowThreshold) {
-        // TODO: Implement constructor
         this.alertThresholdHigh = highThreshold;
         this.alertThresholdLow = lowThreshold;
     }
 
     @Override
-    public void onUpdate(StockPrice stockPrice) {
-        // TODO: Implement alert logic based on threshold conditions
+    public synchronized void onUpdate(StockPrice stockPrice) {
         String stockCode = stockPrice.getCode();
         double currentPrice = stockPrice.getAvgPrice();
-
-        // Lấy giá lần trước đã alert (nếu có)
         Double lastPrice = lastAlertedPrices.get(stockCode);
 
-        // Nếu vượt ngưỡng cao
-        if (currentPrice >= alertThresholdHigh) {
-            if (lastPrice == null || lastPrice != currentPrice) {
+        boolean shouldAlert =
+            (currentPrice >= alertThresholdHigh || currentPrice < alertThresholdLow) &&
+            (lastPrice == null || !Double.valueOf(currentPrice).equals(lastPrice));
+
+        if (shouldAlert) {
+            if (currentPrice >= alertThresholdHigh) {
                 alertAbove(stockCode, currentPrice);
-                lastAlertedPrices.put(stockCode, currentPrice);
-            }
-        }
-
-        // Nếu thấp hơn ngưỡng thấp
-        else if (currentPrice < alertThresholdLow) {
-            if (lastPrice == null || lastPrice != currentPrice) {
+            } else {
                 alertBelow(stockCode, currentPrice);
-                lastAlertedPrices.put(stockCode, currentPrice);
             }
-        }
-
-        // Nếu trong vùng an toàn (không alert), reset trạng thái
-        else {
-            lastAlertedPrices.remove(stockCode);
+            lastAlertedPrices.put(stockCode, currentPrice);
         }
     }
 
     private void alertAbove(String stockCode, double price) {
-        // TODO: Call Logger to log the alert
         Logger.logAlert(stockCode, price);
     }
 
     private void alertBelow(String stockCode, double price) {
-        // TODO: Call Logger to log the alert
         Logger.logAlert(stockCode, price);
     }
 }
-
