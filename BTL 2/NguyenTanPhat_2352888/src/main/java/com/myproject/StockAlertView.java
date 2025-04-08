@@ -32,7 +32,7 @@ public class StockAlertView implements StockViewer {
         }
 
         // Nếu thấp hơn ngưỡng thấp
-        else if (currentPrice < alertThresholdLow) {
+        else if (currentPrice <= alertThresholdLow) {
             if (lastPrice == null || lastPrice != currentPrice) {
                 alertBelow(stockCode, currentPrice);
                 lastAlertedPrices.put(stockCode, currentPrice);
@@ -55,4 +55,3 @@ public class StockAlertView implements StockViewer {
         Logger.logAlert(stockCode, price);
     }
 }
-

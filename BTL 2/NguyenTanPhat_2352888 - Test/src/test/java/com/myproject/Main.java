@@ -878,7 +878,7 @@ public class Main {
             compareOutput("Summary_Testcase_04", expected, output);
     }
 
-    // Test 55: Cập nhật giá xen kẽ cho stock "ABC" với realtime và alert
+    // Test 5: Cập nhật giá xen kẽ cho stock "ABC" với realtime và alert
     private static void Summary_Testcase_05() {
         // Reset feeder
         resetStockFeeder();
@@ -899,21 +899,13 @@ public class Main {
             // Notify lần 4: Giá 150 (không thay đổi, chỉ realtime log duy nhất từ lần cập nhật mới)
             feeder.notify(new StockPrice("ABC", 150, 1000, System.currentTimeMillis()/1000));
         });
-            // String expected =
-            // "[ALERT] ABC price changed significantly to $120.0"+
-            // "[REALTIME] Realtime Price Update: ABC is now $90.0"+
-            // "[REALTIME] Realtime Price Update: ABC is now $120.0"+
-            // "[ALERT] ABC price changed significantly to $120.0"+
-            // "[REALTIME] Realtime Price Update: ABC is now $150.0"+
-            // "[ALERT] ABC price changed significantly to $150.0";
             String expected =
-            "[ALERT] ABC price changed significantly to $120.0\n" +
-            "[REALTIME] Realtime Price Update: ABC is now $90.0\n" +
-            "[REALTIME] Realtime Price Update: ABC is now $120.0\n" +
-            "[REALTIME] Realtime Price Update: ABC is now $150.0\n" +
-            "[ALERT] ABC price changed significantly to $150.0\n";
-
-
+            "[ALERT] ABC price changed significantly to $120.0"+
+            "[REALTIME] Realtime Price Update: ABC is now $90.0"+
+            "[REALTIME] Realtime Price Update: ABC is now $120.0"+
+            "[ALERT] ABC price changed significantly to $120.0"+
+            "[REALTIME] Realtime Price Update: ABC is now $150.0"+
+            "[ALERT] ABC price changed significantly to $150.0";
             compareOutput("Summary_Testcase_05", expected, output);
     }
 
