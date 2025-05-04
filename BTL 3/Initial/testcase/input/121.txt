@@ -1,0 +1,2 @@
+INSERT s string
+ASSIGN s 123

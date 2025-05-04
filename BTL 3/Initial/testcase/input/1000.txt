@@ -1,0 +1,14 @@
+INSERT a number
+INSERT a string
+INSERT b string
+BEGIN
+INSERT b string
+ASSIGN b 'hello'
+ASSIGN a 10
+BEGIN
+INSERT c number
+ASSIGN c a
+PRINT
+END
+RPRINT
+END

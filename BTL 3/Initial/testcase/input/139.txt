@@ -1,0 +1,4 @@
+BEGIN
+INSERT tmp number
+END
+LOOKUP tmp

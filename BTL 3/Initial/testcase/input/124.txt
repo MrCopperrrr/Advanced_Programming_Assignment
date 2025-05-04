@@ -1,0 +1,3 @@
+INSERT a string
+INSERT z number
+ASSIGN a 123

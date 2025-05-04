@@ -1,0 +1,2 @@
+INSERT n number
+ASSIGN n 999

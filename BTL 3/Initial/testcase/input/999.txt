@@ -1,0 +1,29 @@
+INSERT a number
+INSERT b string
+ASSIGN a 100
+ASSIGN b 'hello'
+BEGIN
+INSERT c number
+ASSIGN c a
+LOOKUP b
+BEGIN
+INSERT a string
+ASSIGN a b
+BEGIN
+INSERT d string
+ASSIGN d 'data123'
+PRINT
+END
+RPRINT
+END
+PRINT
+END
+LOOKUP c
+INSERT b number
+ASSIGN a 'oops'
+ASSIGN x 123
+END
+BEGIN
+INSERT e number
+LOOKUP a
+ASSIGN e a

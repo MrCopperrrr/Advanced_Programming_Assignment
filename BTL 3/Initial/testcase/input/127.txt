@@ -1,0 +1,4 @@
+INSERT x string
+BEGIN
+BEGIN
+ASSIGN x 'a'

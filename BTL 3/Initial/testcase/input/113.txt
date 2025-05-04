@@ -1,0 +1,5 @@
+INSERT x number
+BEGIN
+BEGIN
+INSERT x string
+END
