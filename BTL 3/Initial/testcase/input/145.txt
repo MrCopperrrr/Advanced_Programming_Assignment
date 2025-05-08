@@ -1,3 +1,0 @@
-INSERT x number
-INSERT y string
-PRINT

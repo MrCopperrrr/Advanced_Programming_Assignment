@@ -1,8 +1,0 @@
-INSERT x number
-BEGIN
-INSERT y string
-BEGIN
-INSERT x string
-PRINT
-END
-END

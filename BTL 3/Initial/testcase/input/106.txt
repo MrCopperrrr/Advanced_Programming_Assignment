@@ -1,4 +1,0 @@
-INSERT a1 number
-INSERT b2 string
-INSERT c3 number
-INSERT d4 string

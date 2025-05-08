@@ -1,4 +1,0 @@
-success
-success
-success
-a//1 b//1

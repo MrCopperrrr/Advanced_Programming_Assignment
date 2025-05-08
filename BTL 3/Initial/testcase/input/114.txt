@@ -1,3 +1,0 @@
-INSERT x number
-INSERT y number
-INSERT z number

@@ -1,5 +1,0 @@
-INSERT x number
-BEGIN
-BEGIN
-BEGIN
-LOOKUP x

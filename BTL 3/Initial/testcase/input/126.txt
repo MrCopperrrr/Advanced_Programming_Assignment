@@ -1,3 +1,0 @@
-INSERT x number
-BEGIN
-ASSIGN x 5

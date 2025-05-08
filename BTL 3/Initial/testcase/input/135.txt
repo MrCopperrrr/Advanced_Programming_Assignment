@@ -1,3 +1,0 @@
-BEGIN
-INSERT x number
-END
